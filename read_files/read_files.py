@@ -13,10 +13,18 @@ import pandas as pd
 # Считываем данные из файла с неизвестной кодировкой в переменную, создавая объект DataFramedisplay(data)
 data=pd.read_csv('read_files/ErrorEnCoding.csv', header=None, encoding_errors='replace')
 #               КОД ДЛЯ ОПРЕДЕНИЯ КОДИРОВКИ В ФАЙЛЕ
-from chardet.universaldetector import UniversalDetector # Импортируем субмодуль chardet.universaldetectordetector = UniversalDetector()
+from chardet.universaldetector import UniversalDetector 
+detector = UniversalDetector()
 with open('read_files/ErrorEnCoding.csv', 'rb') as fh:
     for line in fh:
         detector.feed(line)
         if detector.done:
             break
-detector.close()
+print(detector.close()) # узнали, что кодировка - KOI8-R
+ # Создаем DataFrame из файла, явно указав кодировку символов, и выводим его содержимое на экран
+data=pd.read_csv('read_files/ErrorEnCoding.csv', encoding='koi8-r', header=None )
+print(data)
+
+                #ЧТЕНИЕ ФАЙЛА ПО ССЫЛКЕ
+data = pd.read_table('https://raw.githubusercontent.com/esabunor/MLWorkspace/master/melb_data.csv', sep=',')
+print(data)                
