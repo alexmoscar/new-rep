@@ -20,11 +20,33 @@ with open('read_files/ErrorEnCoding.csv', 'rb') as fh:
         detector.feed(line)
         if detector.done:
             break
-print(detector.close()) # узнали, что кодировка - KOI8-R
+#print(detector.close()) # узнали, что кодировка - KOI8-R
  # Создаем DataFrame из файла, явно указав кодировку символов, и выводим его содержимое на экран
 data=pd.read_csv('read_files/ErrorEnCoding.csv', encoding='koi8-r', header=None )
-print(data)
+#print(data)
 
-                #ЧТЕНИЕ ФАЙЛА ПО ССЫЛКЕ
+                #ЧТЕНИЕ ФАЙЛА ПО ССЫЛКЕ   ОБЯЗАТЕЛЬНО УСТАНОВИТЬ PIP INSTALL REQUESTS (ИНОГДА НУЖНО ПЕРЕЗАГРУЗИТЬ)
 data = pd.read_table('https://raw.githubusercontent.com/esabunor/MLWorkspace/master/melb_data.csv', sep=',')
-print(data)                
+#print(data)
+
+                #ЧТЕНИЕ ФАЛОВ В ZIP АРХИВЕ
+data = pd.read_csv('read_files/students_performance.zip')
+#print(data)
+
+                #Запись файла в zip папку
+compression_opts = dict(method='zip', archive_name='out.csv')
+data.to_csv('data/out.zip', index=False, compression=compression_opts) #data - папка в кот сохр файл
+#print(data)
+
+                #РАБОТА С ФАЙЛАМИ EXCEL (УСТАНОВИТЬ PIP INSTALL OPENPYXL)
+                        #ЧТЕНИЕ ФАЙЛА XLS,XLSX
+grades = pd.read_excel('read_files/grades.xlsx')
+#print(grades)
+
+                        #ЧТЕНИЕ EXCEL ПО ССЫЛКЕ
+data = pd.read_excel('https://github.com/asaydn/test/raw/master/january.xlsx')
+#print(data)
+
+                        # КАК ПРОЧИТАТЬ ОДИН КАКОЙ-ТО ЛИСТ В EXCEL, ЕСЛИ ИХ ТАМ НЕСКОЛЬКО
+grades = pd.read_excel('read_files/grades.xlsx', sheet_name='Maths')
+print(grades.head(5))
