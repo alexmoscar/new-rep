@@ -49,4 +49,22 @@ data = pd.read_excel('https://github.com/asaydn/test/raw/master/january.xlsx')
 
                         # КАК ПРОЧИТАТЬ ОДИН КАКОЙ-ТО ЛИСТ В EXCEL, ЕСЛИ ИХ ТАМ НЕСКОЛЬКО
 grades = pd.read_excel('read_files/grades.xlsx', sheet_name='Maths')
-print(grades.head(5))
+#print(grades.head(5))
+
+                        # КАК ЗАПИСАТЬ КОД В ФАЙЛ EXCEL
+grades.to_excel('read_files/grades_new.xlsx')
+#openpyxl — рекомендуемый пакет для чтения и записи файлов Excel 2010+ (например, xlsx);
+#xlsxwriter — альтернативный пакет для записи данных, информации о форматировании и, в частности, диаграмм в формате Excel 2010+ (например, xlsx);
+#pyxlsb — пакет позволяет читать файлы Excel в xlsb-формате;
+#pylightxl — пакет позволяет читать xlsx- и xlsm-файлы и записывать xlsx-файлы;
+#xlrd — пакет предназначен для чтения данных и информации о форматировании из старых файлов Excel (например, xls);
+#xlwt — пакет предназначен для записи данных и информации о форматировании в старые файлы Excel (например, xls).
+
+
+#ЗАДАНИЕ Считайте данные из двух листов файла ratings+movies.xlsx в разные DataFrame, объедините в один,
+#запишите данные из полученного DataFrame в файл. Сколько строк (включая строку заголовков) в результирующем файле?
+list1 = pd.read_excel('read_files/ratings_movies.xlsx', sheet_name = 'ratings')
+list2 = pd.read_excel('read_files/ratings_movies.xlsx', sheet_name = 'movies')
+total_list = list1.merge(list2, on = 'movieId', how = 'left')
+print(total_list.info())
+total_list.to_excel('read_files/ratings_movies.xlsx', sheet_name = 'Joined', index = False)
