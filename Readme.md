@@ -1,7 +1,7 @@
 # Проект 0. Угадай число
 
 ## Оглавление  
-[1. Описание проекта](https://github.com/alexmoscar/new-rep/blob/main/Readme.md#Описание-проекта)  
+[1. Описание проекта](https://github.com/alexmoscar/new-rep/blob/main/Readme.md#1.-Описание-проекта)  
 [2. Какой кейс решаем?](https://github.com/alexmoscar/new-rep/blob/main/Readme.md#Какой-кейс-решаем)  
 [3. Условия](https://github.com/alexmoscar/new-rep/blob/main/Readme.md#Условия)  
 [4. Метрики качества](https://github.com/alexmoscar/new-rep/blob/main/Readme.md#Метрика-качества)  
