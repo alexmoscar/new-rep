@@ -4,7 +4,7 @@
 ## [2. Преобразование данных](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Преобразование-данных)
 ## [3. Исследование зависимостей в данных](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Исследование-зависимостей-в-данных)
 ## [4. Очистка данных](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Очистка-данных)
-## [5. Заключение](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#5.-Заключение)<hr>
+## [5. Заключение](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Заключение)<hr>
 ## <center>**Основная часть**<center>
 ## 1. Исследование структуры данных 
 ### *Прочитать данные с помощью библиотеки Pandas.*
