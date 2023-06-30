@@ -1,12 +1,12 @@
 # *Проект: Анализ резюме из HeadHunter*
 ## <center>**Оглавление**<center>
-## [1. Исследование структуры данных](https://github.com/alexmoscar/new-rep/data/project1/Readme.md#Исследование-структуры-данных)
-## [2. Преобразование данных](https://github.com/alexmoscar/new-rep/data/project1/Readme.md#Преобразование-данных)
-## [3. Исследование зависимостей в данных](https://github.com/alexmoscar/new-rep/data/project1/Readme.md#Исследование-зависимостей-в-данных)
-## [4. Очистка данных](https://github.com/alexmoscar/new-rep/data/project1/Readme.md#Очистка-данных)
-## [5. Заключение](https://github.com/alexmoscar/new-rep/data/project1/Readme.md#Заключение)<hr>
+## [1. Исследование структуры данных](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Исследование-структуры-данных)
+## [2. Преобразование данных](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Преобразование-данных)
+## [3. Исследование зависимостей в данных](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Исследование-зависимостей-в-данных)
+## [4. Очистка данных](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Очистка-данных)
+## [5. Заключение](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Заключение)<hr>
 ## <center>**Основная часть**<center>
-## [1. Исследование структуры данных](https://github.com/alexmoscar/new-rep/data/project1/Readme.md#Исследование-структуры-данных) 
+## [1. Исследование структуры данных](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Исследование-структуры-данных) 
 ### *Прочитать данные с помощью библиотеки Pandas.*
 ```python
 database = pd.read_csv('dst-3.0_16_1_hh_database.csv', sep = ';')
@@ -25,9 +25,9 @@ print(database.info())
 ```python
 print(database.describe())
 ```
-[К оглавлению](https://github.com/alexmoscar/new-rep/data/project1/Readme.md#Оглавление)<hr>
+[К оглавлению](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Оглавление)<hr>
 
-## [2. Преобразование данных](https://github.com/alexmoscar/new-rep/data/project1/Readme.md#Преобразование-данных)
+## [2. Преобразование данных](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Преобразование-данных)
 ## *В данном блоке была проведена работа по преобразованию данных, где были созданы новые, преобразованные и удалены ненужные стобцы.*
  *   **2.1.** Первое, необходимо с помощью функции-преобразования, создать новый признак "Образование", который должен иметь 4 категории: "высшее", "неоконченное высшее", "среднее специальное" и "среднее", так как изначально,в таблице, формат образования был: <Уровень образования год выпуска ВУЗ специальность...>..
  ```python
@@ -158,9 +158,9 @@ database['ЗП (руб)'] = merged['ЗП желаемая']*merged['close']/merg
 
 database=database.drop(['ЗП','ЗП желаемая','курс'], axis=1)
 ```
-[К оглавлению](https://github.com/alexmoscar/new-rep/data/project1/Readme.md#Оглавление)<hr>
+[К оглавлению](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Оглавление)<hr>
 
-## [3. Исследование зависимостей в данных](https://github.com/alexmoscar/new-rep/data/project1/Readme.md#Исследование-зависимостей-в-данных)
+## [3. Исследование зависимостей в данных](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Исследование-зависимостей-в-данных)
 ## *В данном блоке была проведена работа по исследованию зависимостей и построении на них графиков.*
 *   **3.1.** Первым был взят признак возраста и найдена мода распределения, каковы предельные значения признака, в каком примерном интервале находится возраст большинства соискателей и есть ли аномалии для признака возраста. Построены гистограмма и коробчатая диаграмма.
 
@@ -217,9 +217,9 @@ database['Опыт работы (год)'] = database['Опыт работы (м
 sns.lineplot(x = [0,100], y = [0,100])
 fig = sns.scatterplot(data = database, x = 'Возраст' , y = 'Опыт работы (год)')
 ```
-[К оглавлению](https://github.com/alexmoscar/new-rep/data/project1/Readme.md#Оглавление)<hr>
+[К оглавлению](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Оглавление)<hr>
 
-## [4.Очистка данных](https://github.com/alexmoscar/new-rep/data/project1/Readme.md#Очистка-данных)
+## [4.Очистка данных](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Очистка-данных)
 ## *В данном блоке была проведена работа по очистке данных от дубликатов, пропусков и вбросов*
 *   **4.1.** Удаление дубликатов.
 ```python
@@ -285,10 +285,10 @@ def outliers_z_score_mod(database, feature, left=4, right=4, log_scale=True):
 outliers, cleaned = outliers_z_score_mod(database, 'Возраст',left = 3, right = 4, log_scale=True)
 print(f'Число выбросов по методу z-отклонения: {outliers.shape[0]}')
 ```
-[К оглавлению](https://github.com/alexmoscar/new-rep/data/project1/Readme.md#Оглавление)<hr>
+[К оглавлению](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Оглавление)<hr>
 
-## [5.Заключение](https://github.com/alexmoscar/new-rep/data/project1/Readme.md#Заключение)
+## [5.Заключение](https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Заключение)
 ## *В результате проделанной работы был проведен большой анализ данных, которые были почищены, приведены в необходимый формат. Полученные данные проанализированы и результаты анализа, могут быть использованы для решения поставленной задачи. Все выводы и ответы на поставленные вопросы, можно найти в ноутбуке шаблоне. Ответы на вопросы не помещены в данный файл, так как они являются специфичными и не всегда могут быть необходимы для других целей, но могут "загрязнить" лишней информацией.*<hr>
 
 ### <ins>Если информация по этому проекту покажется вам интересной или полезной, то я буду очень вам благодарен, если отметите репозиторий и профиль ⭐️⭐️⭐️-дами <hr>
-[К оглавлению](https://github.com/alexmoscar/new-rep/data/project1/Readme.md#Оглавление)<hr>
+[К оглавлению](https://https://github.com/alexmoscar/new-rep/blob/main/data/project1/Readme.md#Оглавление)<hr>
