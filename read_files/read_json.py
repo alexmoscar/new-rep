@@ -11,3 +11,12 @@ for recipe in recipes:
         print(recipe['cuisine'])
         break
       
+#Какое количество уникальных национальных кухонь присутствуют в нашем наборе данных?
+cuisines = []
+for recipe in recipes:
+    if not(recipe['cuisine'] in cuisines):
+        cuisines.append(recipe['cuisine'])
+print(len(cuisines))
+
+#Какой из национальных кухонь принадлежит самое большое количество рецептов?
+cuisines_name = []
