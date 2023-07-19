@@ -1,14 +1,14 @@
 # *Визуализация данных: Задача банка*
 ## <center>**Оглавление**<center>
-## [1. Задание_1](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание_1)
-## [2. Задание_2](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание_2)
-## [3. Задание_3](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание_3)
-## [4. Задание_4](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание_4)
-## [5. Задание_5](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание_5)
-## [5. Задание_6](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание_6)
-## [5. Задание_7](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание_7)
-## [5. Задание_8](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание_8)
-## [5. Задание_9](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание_9)<hr>
+## [1. Задание 1](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-1)
+## [2. Задание 2](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-2)
+## [3. Задание 3](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-3)
+## [4. Задание 4](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-4)
+## [5. Задание 5](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-5)
+## [5. Задание 6](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-6)
+## [5. Задание 7](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-7)
+## [5. Задание 8](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-8)
+## [5. Задание 9](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-9)<hr>
 ## <center>**Основная часть**<center>
 ## Задание_1 
 ### *Каково соотношение ушедших и лояльных клиентов? Покажите это на графике и дайте комментарий по соотношению.*
@@ -26,7 +26,7 @@ plt.title('Соотношение числа лояльных и ушедших 
 plt.pie(left_clients, explode = [0.1, 0], labels = labels, autopct='%.0f%%')
 plt.show()
 ```
-![](../visual_task/1.png)
+![](../visual_task/pic/1.png)
 ```python
 bar_database = database.groupby('Образование', as_index = False)['ЗП (руб)'].median()
 fig = px.bar(data_frame = bar_database, x = 'Образование', y = 'ЗП (руб)', color = 'Образование', title = 'ЗП медианное по Образованию')
