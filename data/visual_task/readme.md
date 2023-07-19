@@ -26,7 +26,7 @@ plt.title('Соотношение числа лояльных и ушедших 
 plt.pie(left_clients, explode = [0.1, 0], labels = labels, autopct='%.0f%%')
 plt.show()
 ```
-![](../project1/pic/1.png)
+![](../visual_task/1.png)
 ```python
 bar_database = database.groupby('Образование', as_index = False)['ЗП (руб)'].median()
 fig = px.bar(data_frame = bar_database, x = 'Образование', y = 'ЗП (руб)', color = 'Образование', title = 'ЗП медианное по Образованию')
