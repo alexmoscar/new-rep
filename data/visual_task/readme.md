@@ -27,7 +27,7 @@ plt.title('Соотношение числа лояльных и ушедших 
 plt.pie(left_clients, explode = [0.1, 0], labels = labels, autopct='%.0f%%')
 plt.show()
 ```
-![](../visual_task/pic/1.png)
+![](../visual_task/pic/10.png)
 
 ### Явно видно, что количество лояльных клиентов в 4 раза превышает к-во ушедших.
 [К оглавлению](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/readme.md#Оглавление)<hr>
