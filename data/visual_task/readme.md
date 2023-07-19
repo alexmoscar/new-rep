@@ -10,7 +10,7 @@
 ## [5. Задание 8](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-8)
 ## [5. Задание 9](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-9)<hr>
 ## <center>**Основная часть**<center>
-## Задание_1 
+## Задание 1 
 ### *Каково соотношение ушедших и лояльных клиентов? Покажите это на графике и дайте комментарий по соотношению.*
 ```python
 import pandas as pd
