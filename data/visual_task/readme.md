@@ -1,14 +1,14 @@
 # *Визуализация данных: Задача банка*
 ## <center>**Оглавление**<center>
-## [1. Задание 1](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-1)
-## [2. Задание 2](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-2)
-## [3. Задание 3](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-3)
-## [4. Задание 4](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-4)
-## [5. Задание 5](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-5)
-## [5. Задание 6](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-6)
-## [5. Задание 7](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-7)
-## [5. Задание 8](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-8)
-## [5. Задание 9](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/Readme.md#Задание-9)<hr>
+## [1. Задание 1](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/readme.md#Задание-1)
+## [2. Задание 2](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/readme.md#Задание-2)
+## [3. Задание 3](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/readme.md#Задание-3)
+## [4. Задание 4](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/readme.md#Задание-4)
+## [5. Задание 5](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/readme.md#Задание-5)
+## [5. Задание 6](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/readme.md#Задание-6)
+## [5. Задание 7](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/readme.md#Задание-7)
+## [5. Задание 8](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/readme.md#Задание-8)
+## [5. Задание 9](https://github.com/alexmoscar/new-rep/blob/main/data/visual_task/readme.md#Задание-9)<hr>
 ## <center>**Основная часть**<center>
 ## Задание 1 
 ### *Каково соотношение ушедших и лояльных клиентов? Покажите это на графике и дайте комментарий по соотношению.*
